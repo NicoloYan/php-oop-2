@@ -1,6 +1,10 @@
 <?php
 
+require_once __DIR__ . '/AccountingProduct.php';
+
 class Product {
+
+    use AccountingProduct;
 
     public $name;
 

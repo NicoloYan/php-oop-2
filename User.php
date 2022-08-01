@@ -1,5 +1,6 @@
 <?php
 
+
 class User {
 
     public $firstName;
@@ -47,7 +48,7 @@ class User {
         // var_dump($amountDue);
 
         if($this->balance < $amountDue) {
-            die('Credito insufficiente');
+            throw new Exception("Dear $this->firstName $this->lastName: Balance is insufficient");
         } else {
             return 'Acquisto effettuato';
         }

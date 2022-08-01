@@ -20,7 +20,6 @@ class PetFood extends Product {
         $this->netWeight = $_netWeight;
     }
 
-    // override
     public function getDetails() {
         return "$this->name $this->brand - Prezzo: $this->price euro. - Peso: $this->netWeight grammi.";
     }
